@@ -1,3 +1,19 @@
+-
+   var services = [
+        {
+            title: 'outsourcing 1',
+            desc: 'Lorem ipsum dolor sit amet 1',
+        },
+        {
+            title: 'outsourcing 2',
+            desc: 'Lorem ipsum dolor sit amet 2',
+        },
+        {
+            title: 'outsourcing 3',
+            desc: 'Lorem ipsum dolor sit amet 3',
+        },
+    ]
+    
 mixin servicesItem(title, desc)
     li
         i.fas.fa-band-aid
@@ -6,6 +22,5 @@ mixin servicesItem(title, desc)
 section#our-services
     h2 our services
     ul
-        +servicesItem('outsourcing','Lorem ipsum dolor sit amet')
-        +servicesItem('outsourcing','Lorem ipsum dolor sit amet')
-        +servicesItem('outsourcing','Lorem ipsum dolor sit amet')
+        each service in services
+            +servicesItem(service.title,service.desc)
