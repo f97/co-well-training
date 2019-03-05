@@ -104,3 +104,18 @@ section h3 {
     font-weight: 300;
     line-height: 22px;
 }
+
+@media only screen and (max-width: 1160px) {
+    #header {
+        text-align: center;
+    }
+    .logo {
+        float: unset;
+        height: 80px;
+    }
+    
+    nav {
+        float: unset;
+    }
+    
+}
