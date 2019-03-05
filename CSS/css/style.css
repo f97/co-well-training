@@ -10,12 +10,14 @@ body {
     background: #f5f5f5;
 }
 
-header {
-    padding: 30px 100px;
+.container {
+    padding: 0 100px;
+    margin: 0 auto;
 }
 
 #header {
     background: #ffffff;
+    padding: 30px 0;
 }
 
 .logo {
@@ -39,14 +41,18 @@ nav {
 }
 
 .menu li {
-    display: inline;
+    float: left;
     text-transform: uppercase;
-    padding: 38px 13px;
 }
 
 .menu li a {
     text-decoration: none;
     color: #444;
+    padding: 38px 13px;
+}
+
+.menu li a:hover {
+    background: #f5f5f5;
 }
 
 #slider {
@@ -66,13 +72,22 @@ nav {
 }
 
 #our-services {
-    padding: 50px;
     text-align: center;
 }
 
-section h2 {
+.section-header {
     font-size: 24px;
     text-transform: uppercase;
+    margin: 60px 0 20px 0;
+}
+
+.section-header::after {
+    content: "";
+    height: 2px;
+    width: 42px;
+    background-color: #444;
+    display: block;
+    margin: 10px auto
 }
 
 section h3 {
@@ -80,14 +95,15 @@ section h3 {
     text-transform: uppercase;
 }
 
-#our-services ul {}
-
 #our-services ul li {
-    width: 250px;
+    width: 25%;
     display: inline-block;
-    margin: 20px;
     padding: 30px;
     background-color: #FFF;
+}
+
+#our-services .item2 {
+    margin: 50px;
 }
 
 #our-services i {
@@ -113,9 +129,19 @@ section h3 {
         float: unset;
         height: 80px;
     }
-    
-    nav {
+    #header nav {
         float: unset;
+        width: 70%;
+        margin: auto;
     }
-    
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        padding: 0;
+    }
+    #header nav {
+        width: 100%;
+        margin: auto;
+    }
 }
