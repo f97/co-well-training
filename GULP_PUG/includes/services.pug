@@ -1,0 +1,11 @@
+mixin servicesItem(title, desc)
+    li
+        i.fas.fa-band-aid
+        h3= title
+        p= desc
+section#our-services
+    h2 our services
+    ul
+        +servicesItem('outsourcing','Lorem ipsum dolor sit amet')
+        +servicesItem('outsourcing','Lorem ipsum dolor sit amet')
+        +servicesItem('outsourcing','Lorem ipsum dolor sit amet')

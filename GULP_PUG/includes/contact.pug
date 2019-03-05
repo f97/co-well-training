@@ -1,0 +1,23 @@
+section#contact
+    h2 contact us
+    .form-contact
+        form(action='/', method='get')
+            input#name(type='text', name='name', placeholder='NAME')
+            input#email(type='email', name='email', placeholder='EMAIL')
+            input#subject(type='text', name='subject', placeholder='SUBJECT')
+            textarea#message(name='message', cols='30', rows='10', placeholder='MESSAGE')
+            input(type='submit', value='SUBMIT QUERY')
+    .our-info
+        ul.items
+            li
+                h4 our location
+                span 1234 Da Nang, Viet Nam
+            li
+                h4 our phone
+                span (000) 000-0000
+            li
+                h4 Fax
+                span (000) 000-0000
+            li
+                h4 Our email
+                a(href='#') information@abc.xyz

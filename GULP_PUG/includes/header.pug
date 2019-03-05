@@ -1,0 +1,11 @@
+header
+    a(href="")
+        h1.logo
+            img(src="/" alt="logo")
+    nav
+        button#toggle-menu
+            i.fa.fa-bars
+        ul.menu
+            each val in ['home', 'about', 'services', 'work', 'team', 'pricing', 'contact', 'blog']
+                li
+                    a(href="#" + val) val

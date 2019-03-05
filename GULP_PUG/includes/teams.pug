@@ -1,0 +1,11 @@
+mixin teamMember(url, name, desc)
+     li
+        img(src= url, alt= name)
+        h4= name
+        p= desc
+section#team-member
+    ul
+       +teamMember('/member1', 'Member 1', 'Member 1 Member 1 Member 1')
+       +teamMember('/member2', 'Member 2', 'Member 2 Member 2 Member 2')
+       +teamMember('/member3', 'Member 3', 'Member 3 Member 3 Member 3')
+       +teamMember('/member4', 'Member 4', 'Member 4 Member 4 Member 4')

@@ -1,0 +1,15 @@
+mixin sliderItem(img, title, desc)
+    li
+        img(src= img, alt='')
+        h3= title
+        p= desc
+        a.btn.btn-view(href='') view portfolio
+        a.btn.btn-purchase(href='') purchase now
+section#slider
+    div.slider-row
+        span.left
+        span.right
+    ul
+        +sliderItem('/img/image1.png','we are a great team','We deliver great things that you definlety love.')
+        +sliderItem('/img/image2.png','we are a great team','We deliver great things that you definlety love.')
+        +sliderItem('/img/image3.png','we are a great team','We deliver great things that you definlety love.')

@@ -1,0 +1,14 @@
+mixin worksItem(url,img, alt)
+    li
+        a(href=url)
+            img(src= img, alt= alt)
+section#our-works
+    h2 our Works
+    ul
+        +worksItem('#1','/img/img1.png','img1')
+        +worksItem('#2','/img/img2.png','img2')
+        +worksItem('#3','/img/img3.png','img3')
+        +worksItem('#4','/img/img4.png','img4')
+        +worksItem('#5','/img/img5.png','img5')
+        +worksItem('#6','/img/img6.png','img6')
+    a#more-works(href='#') view more
