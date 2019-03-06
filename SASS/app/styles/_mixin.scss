@@ -5,3 +5,18 @@
         clear: both;
     }
 }
+
+@mixin serviceicon($image){
+    background-image: url($image);
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 auto;
+    background-size: 24px;
+}
+
+@mixin pcserviceicon(){
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}

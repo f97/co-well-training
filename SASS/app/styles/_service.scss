@@ -5,28 +5,13 @@
         padding: 33px 19px;
         margin-bottom: 35px;
         &__icon1 {
-            background-image: url('/images/service-1.png');
-            width: 24px;
-            height: 24px;
-            display: block;
-            margin: 0 auto;
-            background-size: 24px;
+            @include serviceicon('/images/service-1.png');
         }
         &__icon2 {
-            background-image: url('/images/service-2.png');
-            width: 24px;
-            height: 24px;
-            display: block;
-            margin: 0 auto;
-            background-size: 24px;
+            @include serviceicon('/images/service-2.png');
         }
         &__icon3 {
-            background-image: url('/images/service-3.png');
-            width: 24px;
-            height: 24px;
-            display: block;
-            margin: 0 auto;
-            background-size: 24px;
+            @include serviceicon('/images/service-3.png');
         }
         &__title {
             margin: 22px 0 28px;
@@ -55,19 +40,13 @@
             width: calc(33.3% - 20px);
             margin: 0;
             &__icon1 {
-                width: 30px;
-                height: 30px;
-                background-size: 30px;
+                @include pcserviceicon;
             }
             &__icon2 {
-                width: 30px;
-                height: 30px;
-                background-size: 30px;
+                @include pcserviceicon;
             }
             &__icon3 {
-                width: 30px;
-                height: 30px;
-                background-size: 30px;
+                @include pcserviceicon;
             }
             &__title {
                 margin: 22px 0 28px;
@@ -80,7 +59,7 @@
                 line-height: 16px;
                 font-weight: 400;
             }
-            &:nth-child(2){
+            &:nth-child(2) {
                 margin: 0 30px;
             }
         }
