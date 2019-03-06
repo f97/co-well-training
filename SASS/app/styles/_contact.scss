@@ -1,0 +1,54 @@
+#contact-section {
+    background-color: #FFF;
+    @include clearfix;
+}
+
+.contact {
+    &__item {
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 12px 0 10px 9px;
+        border: 1px solid #d3d3d3;
+        font-size: 12px;
+        box-sizing: border-box;
+    }
+    .button {
+        margin-top: 8px;
+        width: 150px;
+        font-weight: 700;
+    }
+    textarea {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+    }
+}
+
+.info {
+    margin-top: 45px;
+    &__item {
+        margin-bottom: 28px;
+        &__title {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 11px;
+        }
+        &__desc {
+            color: #818181;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .contact {
+        display: flex;
+        flex-direction: row;
+    }
+    .form-contact {
+        width: 592px;
+        margin-left: 30px;
+    }
+    .info {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+}
