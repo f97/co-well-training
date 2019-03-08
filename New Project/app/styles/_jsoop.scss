@@ -1,0 +1,14 @@
+.jsoop {
+    text-align: center;
+    &__div {
+        width: 300px;
+        background-color: #444444;
+        margin: 30px auto;
+    }
+    &__control {
+        input {
+            display: block;
+            margin: 30px auto;
+        }
+    }
+}

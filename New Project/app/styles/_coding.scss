@@ -34,6 +34,9 @@
     &__image {
         box-shadow: -4px -4px 72px -16px rgba(0, 0, 0, 0.66);
         max-width: inherit;
+        img {
+            border-radius: 5px;
+        }
     }
 }
 
@@ -61,9 +64,6 @@
         &__image {
             float: right;
             max-width: 50%;
-            img {
-                border-radius: 5px;
-            }
         }
     }
 }

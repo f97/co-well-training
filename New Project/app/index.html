@@ -19,6 +19,31 @@
 
 <body>
   <header class="header"></header>
+  <section class="section jsoop">
+    <div class="jsoop__div" id="divjsoop">
+      <ul class="jsoop__ul" id="uljsoop"></ul>
+    </div>
+    <div class="jsoop__control">
+        <input type="text" name="name" id="name">
+        <input type="text" name="value" id="value">
+        <input type="button" value="Submit" onclick="addBtnClick()">
+    </div>
+  </section>
+  <section class="section jstest">
+    <div class="jstest__div" id="divtest">
+
+    </div>
+    <div class="jstest__control">
+      <!-- <label for="bgcolor">bgcolor</label> -->
+      <input type="color" name="bgcolor" id="bgcolor" value="#fdffff" onchange="changeDiv()">
+      <!-- <label for="width">width(px)</label> -->
+      <input type="number" name="width" id="width" onkeyup="changeDiv()">
+      <!-- <label for="height">height(px)</label> -->
+      <input type="number" name="height" id="height" onkeyup="changeDiv()">
+      <input type="button" value="thay đổi">
+    </div>
+  </section>
+
   <section class="section slideshow"></section>
   <section class="section intro"></section>
   <section class="section coding">
@@ -130,6 +155,7 @@
   <section class="section subscriber"></section>
   <section class="section news"></section>
   <footer class="footer"></footer>
+  <script src="/scripts/main.js"></script>
 </body>
 
 </html>
