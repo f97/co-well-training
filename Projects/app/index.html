@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>App</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+
+</head>
+
+<body>
+  <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <section id="app">
+
+    <section class="section editor" id="editor-form">
+
+      <h3 class="section__title">Editor</h3>
+
+      <div class="editor__box">
+        <div class="editor__type">
+          <label for="input-type">Input type</label>
+          <select name="input-type" id="input-type">
+            <option value="text">text</option>
+            <option value="textarea">textarea</option>
+            <option value="button">button</option>
+            <option value="radio">radio</option>
+            <option value="checkbox">checkbox</option>
+            <option value="weather">weather</option>
+          </select>
+        </div>
+        <div class="editor__content" id="editor-content">
+          <div id="editor-basic" class="editor__content__basic">
+            <div class="input-group">
+              <label for="editor-label">Label</label>
+              <input type="text" name="editor-label" id="input-label">
+            </div>
+            <div class="editor__content__main" id="editor-main">
+              <div class="editor__content__default">
+                <div class="form-group">
+                  <div class="input-group">
+                    <label for="editor-label">Name</label>
+                    <input type="text" name="editor-label" id="input-name" class="extra-name">
+                  </div>
+                  <div class="input-group">
+                    <label for="editor-label">Value</label>
+                    <input type="text" name="editor-label" id="input-value" class="extra-value">
+                  </div>
+                </div>
+              </div>
+              <div class="editor__content__extra hide">
+                <div class="form-group">
+                  <div class="input-group">
+                    <label for="editor-label">Name</label>
+                    <input type="text" name="editor-label" class="extra-name">
+                  </div>
+                  <div class="input-group">
+                    <label for="editor-label">Value</label>
+                    <input type="text" name="editor-label" class="extra-value">
+                  </div>
+                </div>
+                <p class="btn-remove-extra">X</p>
+              </div>
+              <div class="editor__button hide" id='more-button'>
+                <input type="button" value="more" id="more-item">
+              </div>
+            </div>
+          </div>
+          <!-- editor content -->
+        </div>
+        <div class="editor__button">
+          <input type="button" value="add to form" id="add-form">
+        </div>
+      </div>
+
+    </section>
+
+    <section id="form-target" class="section form">
+      <div class="form__header">
+        <h3 class="form__title section__title">Form</h3>
+        <div class="form__theme">
+          <select name="theme" id="theme">
+            <option value="basic">change form style</option>
+            <option value="blue">blue</option>
+
+          </select>
+        </div>
+      </div>
+      <div class="form__box">
+        <div class="form__active">
+          <label for="form-active">Active</label>
+          <input type="text" name="form-active" id="form-active">
+        </div>
+        <div class="form__content" id="form-content">
+          <!-- form content -->
+        </div>
+        <!-- <input type="button" value="value" id="value"> -->
+      </div>
+    </section>
+
+  </section>
+
+
+  <!-- build:js scripts/vendor.js -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

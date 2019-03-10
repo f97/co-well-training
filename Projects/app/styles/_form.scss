@@ -1,0 +1,28 @@
+.form {
+    width: 60%;
+    float: right;
+    &__item {
+        margin: 10px 0;
+    }
+    &__box {
+        padding: 10px;
+        border: 1px solid #979797;
+    }
+    &__active {
+        padding: 10px;
+        border-bottom: 1px dashed #979797;
+        margin-bottom: 10px;
+    }
+    &__title {
+        display: inline-block;
+    }
+    &__theme {
+        display: inline-block;
+        right: 100px;
+        position: absolute;
+        top: 140px;
+    }
+    &--blue{
+        border-bottom: 1px dashed #5C7287;
+    }
+}

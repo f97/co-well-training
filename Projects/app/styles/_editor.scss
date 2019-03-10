@@ -1,0 +1,39 @@
+.editor {
+    width: 35%;
+    float: left;
+    &__box {
+        padding: 10px;
+        border: 1px solid #979797;
+    }
+    &__type {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    &__content {
+        margin-bottom: 15px;
+        &__main {
+            border: 1px dashed #979797;
+            padding: 10px;
+        }
+        &__default {
+            border-bottom: 1px dashed #979797;
+        }
+        &__extra {
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #979797;
+            @include clearfix;
+            .form-group {
+                float: left;
+                width: 90%
+            }
+            .btn-remove-extra {
+                float: left;
+                margin: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    &__button {
+        text-align: right
+    }
+}

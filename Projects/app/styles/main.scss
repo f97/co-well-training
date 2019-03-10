@@ -1,0 +1,41 @@
+@import 'reset';
+@import 'mixin';
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #FFFFFF;
+}
+
+#app {
+    @include clearfix;
+    margin: 100px;
+    .section {
+        &__title {
+            font-size: 30px;
+            margin: 0 10px;
+            padding: 30px;
+            color: #77A5DD;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.blue {
+    input {
+        background-color: #ECF4FF !important;
+        border-color: #61778C !important;
+    }
+    input[type=button] {
+        background-color: #417BA0 !important;
+    }
+    label{
+        color: #6D8696 !important;
+    }
+}
+
+@import 'editor';
+@import 'form';
+@import 'input';
