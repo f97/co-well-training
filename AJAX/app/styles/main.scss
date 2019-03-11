@@ -1,0 +1,49 @@
+@import 'reset';
+@import 'mixin';
+$font-main: 'Roboto',
+Arial,
+Helvetica,
+sans-serif;
+$font-color: #2C2C2C;
+$border-main: 1px solid #D8D8D8;
+;
+body {
+    font-family: $font-main;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    color: $font-color;
+}
+
+// Section
+.section {
+    width: 400px;
+    margin: 10px auto;
+    border: $border-main;
+    padding: 20px;
+    @include clearfix;
+}
+
+// User
+.user {
+    border-bottom: $border-main;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    &__avatar {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        border: $border-main;
+    }
+    &__fullname {
+        display: inline-block;
+        position: absolute;
+        padding: 32px 30px;
+        font-weight: bold;
+    }
+}
+
+// Global
+.more {
+    float: right;
+}

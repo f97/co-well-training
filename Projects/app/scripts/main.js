@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Danang&appid=fafa12fe16f2f85bab757995af7d38f3", function (result) {
+        alert("Country: " + result.sys.country );
+    });
     function formClass() {
 
         this.id;
