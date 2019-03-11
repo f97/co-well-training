@@ -181,4 +181,7 @@ $(document).ready(function () {
             $('#form-target').removeClass('blue');
         }
     });
+    $("#form-active").keypress(function (event) {
+        $("#form-target").attr("action", $('#form-active').val());
+    });
 })
